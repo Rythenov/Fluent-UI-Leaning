@@ -79,6 +79,80 @@
                 android:layout_height="wrap_content"
                 android:text="@string/show_snack_bar" />
 
+            <TextView
+                style="@style/TextAppearance.FluentUI.SubHeading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/short_duration_with_action_and_medium_custom_view" />
+
+            <com.microsoft.fluentui.widget.Button
+                android:id="@+id/btn_short_duration_with_action_and_medium_custom_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_snack_bar" />
+
+            <!--Multiline-->
+
+            <TextView
+                style="@style/TextAppearance.FluentUI.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_layout_margin"
+                android:paddingBottom="@dimen/demo_headline_padding_bottom"
+                android:text="@string/multi_line" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/demo_headline_divider_height"
+                android:background="@drawable/ms_row_divider" />
+
+            <TextView
+                style="@style/TextAppearance.DemoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/long_duration" />
+
+            <com.microsoft.fluentui.widget.Button
+                android:id="@+id/btn_multi_line_long_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_snack_bar" />
+
+            <TextView
+                style="@style/TextAppearance.DemoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/indefinite_duration_with_action_and_text_update" />
+
+            <com.microsoft.fluentui.widget.Button
+                android:id="@+id/btn_indefinite_duration_with_action_and_text_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_snack_bar" />
+
+            <TextView
+                style="@style/TextAppearance.DemoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/long_duration_with_action_and_small_custom_view" />
+
+            <com.microsoft.fluentui.widget.Button
+                android:id="@+id/btn_long_duration_with_action_and_small_custom_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_snack_bar" />
+
+            <TextView
+                style="@style/TextAppearance.DemoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/long_duration_with_action_and_medium_custom_view" />
+
+            <com.microsoft.fluentui.widget.Button
+                android:id="@+id/btn_long_duration_with_action_and_medium_custom_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_snack_bar" />
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

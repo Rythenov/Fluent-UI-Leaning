@@ -7,4 +7,14 @@
     <string name="response_action">响应动作</string>
     <string name="long_duration_with_circular_progress_as_small_custom_view">长持续时间 &amp;&amp; 作为 Small CustomView 的圆形进度条</string>
     <string name="show_snack_bar">SHOW SNACK BAR</string>
+    <string name="short_duration_with_action_and_medium_custom_view">短持续时间 &amp;&amp; Medium CustomView &amp;&amp; Action</string>
+    <string name="persona_name_jermyn_gao">Jermyn Gao</string>
+    <string name="multi_line">多行 Multi line</string>
+    <string name="long_duration">长持续时间</string>
+    <string name="snack_bar_multiline_text">这是一个多行快餐栏。 最大行数设置为两行，其余文本将被截断。\n
+            翻译翻译，什么叫惊喜？什么，叫TMD，惊喜？？？ ---张牧之</string>
+    <string name="indefinite_duration_with_action_and_text_update">无限时模式 &amp;&amp; 文本更新 &amp;&amp; Action</string>
+    <string name="snack_bar_update_text">正在装糊涂....................</string>
+    <string name="long_duration_with_action_and_medium_custom_view">长持续时间 &amp;&amp; Medium CustomView</string>
+    <string name="long_duration_with_action_and_small_custom_view">长持续时间 &amp;&amp; Small CustomView</string>
 </resources>

@@ -4,20 +4,27 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 import androidx.core.widget.NestedScrollView;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.RelativeLayout;
+import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.microsoft.fluentui.appbarlayout.AppBarLayout;
+import com.microsoft.fluentui.persona.AvatarSize;
+import com.microsoft.fluentui.persona.AvatarView;
 import com.microsoft.fluentui.progress.ProgressBar;
 import com.microsoft.fluentui.snackbar.Snackbar;
+import com.microsoft.fluentui.util.ViewUtilsKt;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -70,6 +77,69 @@ public class SnackBarActivity extends AppCompatActivity {
                 .show();
     }
 
+    @OnClick(R.id.btn_short_duration_with_action_and_medium_custom_view)
+    void onShortDurationWithActionAndMediumCustomView(){
+        AvatarView avatarView = new AvatarView(this);
+        avatarView.setAvatarSize(AvatarSize.MEDIUM);
+        avatarView.setName(getString(R.string.persona_name_jermyn_gao));
+        Snackbar.Companion.make(rootView, getString(R.string.short_duration_with_action_and_medium_custom_view), Snackbar.LENGTH_SHORT, Snackbar.Style.REGULAR)
+                .setCustomView(avatarView, Snackbar.CustomViewSize.MEDIUM)
+                .setAction(getString(R.string.action)
+                        , v ->{
+                                    Toast.makeText(SnackBarActivity.this, getString(R.string.response_action), Toast.LENGTH_SHORT).show();
+                        })
+                .show();
+    }
+
+    @OnClick(R.id.btn_multi_line_long_duration)
+    void onMultiLineLongDuration(){
+        Snackbar.Companion.make(rootView, getString(R.string.snack_bar_multiline_text), Snackbar.LENGTH_LONG, Snackbar.Style.REGULAR).show();
+    }
+
+    @OnClick(R.id.btn_indefinite_duration_with_action_and_text_update)
+    void onIndefiniteDurationWithActionAndTextUpdate(){
+        Snackbar snackbar = Snackbar.Companion.make(rootView, getString(R.string.snack_bar_multiline_text), Snackbar.LENGTH_INDEFINITE, Snackbar.Style.REGULAR)
+                .setAction(getString(R.string.action), v -> {
+                    Toast.makeText(SnackBarActivity.this, getString(R.string.response_action), Toast.LENGTH_SHORT).show();
+            });
+
+        snackbar.show();
+
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                snackbar.getView().post(() -> {
+                    snackbar.setText(getString(R.string.snack_bar_update_text));
+                });
+            }
+        }, 2000);
+    }
+
+    @OnClick(R.id.btn_long_duration_with_action_and_small_custom_view)
+    void longDurationWithActionAndSmallCustomView(){
+        ImageView checkmarkIconImageView = ViewUtilsKt.createImageView(this
+                , com.microsoft.fluentui.R.drawable.ms_ic_checkmark_24_filled
+                , ContextCompat.getColor(this, R.color.fluentui_white));
+        Snackbar.Companion.make(rootView, getString(R.string.snack_bar_multiline_text), Snackbar.LENGTH_LONG, Snackbar.Style.REGULAR)
+                .setCustomView(checkmarkIconImageView, Snackbar.CustomViewSize.MEDIUM)
+                .show();
+    }
+
+    @OnClick(R.id.btn_long_duration_with_action_and_medium_custom_view)
+    void longDurationWithActionAndMediumCustomView(){
+        ImageView thumbnailImageView = new ImageView(this);
+        Bitmap thumbnailBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.thumbnail_example_32);
+        RoundedBitmapDrawable roundedCornerThumbnailDrawable = RoundedBitmapDrawableFactory.create(getResources(), thumbnailBitmap);
+        roundedCornerThumbnailDrawable.setCornerRadius(getResources().getDimension(com.microsoft.fluentui.transients.R.dimen.fluentui_snackbar_background_corner_radius));
+        thumbnailImageView.setImageDrawable(roundedCornerThumbnailDrawable);
+        Snackbar.Companion.make(rootView, getString(R.string.snack_bar_multiline_text), Snackbar.LENGTH_SHORT, Snackbar.Style.REGULAR)
+                .setCustomView(thumbnailImageView, Snackbar.CustomViewSize.MEDIUM)
+                .setAction(getString(R.string.action), v -> {
+                    Toast.makeText(SnackBarActivity.this, getString(R.string.response_action), Toast.LENGTH_SHORT).show();
+                })
+                .show();
+    }
 
 
     @Override
