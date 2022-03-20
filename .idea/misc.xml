@@ -5,10 +5,13 @@
       <map>
         <entry key="../../../../../../../layout/custom_preview.xml" value="0.3015625" />
         <entry key="../../../../../../layout/custom_preview.xml" value="0.35208333333333336" />
+        <entry key="../../../../../.gradle/caches/transforms-3/47ee1d03e2f9bb5efb9e60ee110df223/transformed/jetified-fluentui_transients-0.0.15/res/layout/view_snackbar.xml" value="0.275" />
+        <entry key="../../../../../.gradle/caches/transforms-3/47ee1d03e2f9bb5efb9e60ee110df223/transformed/jetified-fluentui_transients-0.0.15/res/layout/view_tooltip.xml" value="0.275" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2855" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2855" />
         <entry key="app/src/main/res/layout/activity_app_bar_learning.xml" value="0.40625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_snack_bar.xml" value="0.4" />
         <entry key="app/src/main/res/layout/activity_snake_bar.xml" value="0.5552536231884058" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2855" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2855" />

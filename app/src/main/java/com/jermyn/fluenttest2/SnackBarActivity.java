@@ -3,11 +3,16 @@ package com.jermyn.fluenttest2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.widget.NestedScrollView;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.microsoft.fluentui.appbarlayout.AppBarLayout;
 import com.microsoft.fluentui.snackbar.Snackbar;
 
@@ -21,6 +26,9 @@ public class SnackBarActivity extends AppCompatActivity {
 
     @BindView(R.id.app_bar)
     AppBarLayout appBarLayout;
+
+    @BindView(R.id.demo_detail_scrollable_container)
+    NestedScrollView nestedScrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,9 +59,9 @@ public class SnackBarActivity extends AppCompatActivity {
 
     }
 
-    @OnClick(R.id.btn_action_snack_bar)
+    @OnClick(R.id.btn_long_snack_bar)
     void onLongSnakeBar(){
-        Snackbar snackbar =  Snackbar.Companion.make(rootView, "ACTION Snack Bar 动作快餐栏", Snackbar.LENGTH_SHORT, Snackbar.Style.REGULAR);
+        com.google.android.material.snackbar.Snackbar.make(rootView, "aaa", BaseTransientBottomBar.LENGTH_SHORT).show();
 
     }
 
