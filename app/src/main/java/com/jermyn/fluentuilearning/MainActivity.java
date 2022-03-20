@@ -30,6 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_snack_bar)
     void onRegularSnakeBarMatchParent(){
-        startActivity(new Intent(this, SnackBarActivity.class));
+        SnackBarActivity.open(this);
     }
 }

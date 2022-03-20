@@ -1,5 +1,7 @@
 package com.jermyn.fluentuilearning;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.PorterDuff;
@@ -39,6 +41,10 @@ public class SnackBarActivity extends AppCompatActivity {
 
     @BindView(R.id.demo_detail_scrollable_container)
     NestedScrollView nestedScrollView;
+
+    public static void open(Context context){
+        context.startActivity(new Intent(context, SnackBarActivity.class));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
