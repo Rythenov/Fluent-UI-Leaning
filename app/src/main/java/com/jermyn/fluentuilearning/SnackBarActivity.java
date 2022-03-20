@@ -1,13 +1,5 @@
 package com.jermyn.fluentuilearning;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.core.content.ContextCompat;
-import androidx.core.graphics.drawable.RoundedBitmapDrawable;
-import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
-import androidx.core.widget.NestedScrollView;
-
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.PorterDuff;
@@ -15,6 +7,14 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
+import androidx.core.widget.NestedScrollView;
 
 import com.microsoft.fluentui.appbarlayout.AppBarLayout;
 import com.microsoft.fluentui.persona.AvatarSize;
@@ -126,8 +126,8 @@ public class SnackBarActivity extends AppCompatActivity {
                 .show();
     }
 
-    @OnClick(R.id.btn_long_duration_with_action_and_medium_custom_view)
-    void longDurationWithActionAndMediumCustomView(){
+    @OnClick(R.id.btn_short_duration_with_action_and_medium_custom_view_multi_line)
+    void shortDurationWithActionAndMediumCustomView(){
         ImageView thumbnailImageView = new ImageView(this);
         Bitmap thumbnailBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.thumbnail_example_32);
         RoundedBitmapDrawable roundedCornerThumbnailDrawable = RoundedBitmapDrawableFactory.create(getResources(), thumbnailBitmap);
@@ -140,6 +140,29 @@ public class SnackBarActivity extends AppCompatActivity {
                 })
                 .show();
     }
+
+    @OnClick(R.id.btn_short_duration_with_long_action)
+    void shortDurationWithLongAction(){
+        Snackbar.Companion.make(rootView, getString(R.string.snack_bar_multiline_text), Snackbar.LENGTH_SHORT, Snackbar.Style.REGULAR)
+                .setAction(getString(R.string.action_long), v -> {
+                    Toast.makeText(SnackBarActivity.this, getString(R.string.response_action), Toast.LENGTH_SHORT).show();
+                })
+                .show();
+    }
+
+    @OnClick(R.id.btn_snackbar_announcement)
+    void announcement(){
+        ImageView announcementIconImageView = new ImageView(this);
+        announcementIconImageView.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_gift_24_filled));
+
+        Snackbar.Companion.make(rootView, getString(R.string.snackbar_announcement), Snackbar.LENGTH_SHORT,Snackbar.Style.ANNOUNCEMENT)
+                .setCustomView(announcementIconImageView, Snackbar.CustomViewSize.SMALL)
+                .setAction(getString(R.string.action), v -> {
+                    Toast.makeText(SnackBarActivity.this, getString(R.string.response_action), Toast.LENGTH_SHORT).show();
+                })
+                .show();
+    }
+
 
 
     @Override

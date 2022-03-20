@@ -4,6 +4,7 @@
     <string name="short_duration">短持续时间</string>
     <string name="short_duration_with_action">短持续时间 &amp;&amp; ACTION</string>
     <string name="action">ACTION</string>
+    <string name="action_long">LONG TEXT ACTION</string>
     <string name="response_action">响应动作</string>
     <string name="long_duration_with_circular_progress_as_small_custom_view">长持续时间 &amp;&amp; 作为 Small CustomView 的圆形进度条</string>
     <string name="show_snack_bar">SHOW SNACK BAR</string>
@@ -17,4 +18,7 @@
     <string name="snack_bar_update_text">正在装糊涂....................</string>
     <string name="long_duration_with_action_and_medium_custom_view">长持续时间 &amp;&amp; Medium CustomView</string>
     <string name="long_duration_with_action_and_small_custom_view">长持续时间 &amp;&amp; Small CustomView</string>
+    <string name="short_duration_with_long_action">短持续时间 &amp;&amp; 长文本Action</string>
+    <string name="snackbar_headline_announcement_style">公告风格 Announcement style</string>
+    <string name="snackbar_announcement">这是一个公告风格快餐栏。 它用于传达新信息。</string>
 </resources>

@@ -106,7 +106,7 @@
                 android:background="@drawable/ms_row_divider" />
 
             <TextView
-                style="@style/TextAppearance.DemoDescription"
+                style="@style/TextAppearance.FluentUI.SubHeading1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/long_duration" />
@@ -118,7 +118,7 @@
                 android:text="@string/show_snack_bar" />
 
             <TextView
-                style="@style/TextAppearance.DemoDescription"
+                style="@style/TextAppearance.FluentUI.SubHeading1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/indefinite_duration_with_action_and_text_update" />
@@ -130,7 +130,7 @@
                 android:text="@string/show_snack_bar" />
 
             <TextView
-                style="@style/TextAppearance.DemoDescription"
+                style="@style/TextAppearance.FluentUI.SubHeading1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/long_duration_with_action_and_small_custom_view" />
@@ -142,13 +142,52 @@
                 android:text="@string/show_snack_bar" />
 
             <TextView
-                style="@style/TextAppearance.DemoDescription"
+                style="@style/TextAppearance.FluentUI.SubHeading1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/long_duration_with_action_and_medium_custom_view" />
+                android:text="@string/short_duration_with_action_and_medium_custom_view" />
 
             <com.microsoft.fluentui.widget.Button
-                android:id="@+id/btn_long_duration_with_action_and_medium_custom_view"
+                android:id="@+id/btn_short_duration_with_action_and_medium_custom_view_multi_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_snack_bar" />
+
+            <TextView
+                style="@style/TextAppearance.FluentUI.SubHeading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/short_duration_with_long_action" />
+
+            <com.microsoft.fluentui.widget.Button
+                android:id="@+id/btn_short_duration_with_long_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_snack_bar" />
+            
+            <!--Announcement style-->
+
+            <TextView
+                style="@style/TextAppearance.FluentUI.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_layout_margin"
+                android:paddingBottom="@dimen/demo_headline_padding_bottom"
+                android:text="@string/snackbar_headline_announcement_style" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/demo_headline_divider_height"
+                android:background="@drawable/ms_row_divider" />
+
+            <TextView
+                style="@style/TextAppearance.FluentUI.SubHeading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/short_duration" />
+
+            <com.microsoft.fluentui.widget.Button
+                android:id="@+id/btn_snackbar_announcement"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/show_snack_bar" />
