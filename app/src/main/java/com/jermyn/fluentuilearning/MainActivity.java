@@ -1,4 +1,4 @@
-package com.jermyn.fluenttest2;
+package com.jermyn.fluentuilearning;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;

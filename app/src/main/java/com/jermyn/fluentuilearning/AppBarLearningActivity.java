@@ -1,19 +1,16 @@
-package com.jermyn.fluenttest2;
+package com.jermyn.fluentuilearning;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.microsoft.fluentui.appbarlayout.AppBarLayout;
-import com.microsoft.fluentui.snackbar.Snackbar;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class AppBarLearningActivity extends AppCompatActivity {
 
