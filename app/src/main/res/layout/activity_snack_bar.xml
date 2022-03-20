@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    tools:context=".SnackBarActivity">
 
     <com.microsoft.fluentui.appbarlayout.AppBarLayout
         android:id="@+id/app_bar"
@@ -27,43 +27,33 @@
             android:orientation="vertical"
             android:layout_margin="@dimen/default_layout_margin">
 
-            <!-- 标题字体 -->
-            <TextView
-                style="@style/TextAppearance.FluentUI.Headline"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="@dimen/demo_headline_padding_bottom"
-                android:text="Fluent UI 学习 //大标题" />
-
-            <!-- 分隔线 -->
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/demo_headline_divider_height"
-                android:layout_marginBottom="@dimen/default_layout_margin"
-                android:background="@drawable/ms_row_divider" />
-
-            <TextView
-                style="@style/TextAppearance.FluentUI.Title1"
-                android:layout_marginBottom="@dimen/demo_headline_padding_bottom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Snack Bar 快餐栏学习 //一级标题"/>
-
-            <TextView
-                android:id="@+id/date_text_view"
-                style="@style/TextAppearance.FluentUI.SubHeading1"
-                android:layout_marginBottom="@dimen/default_layout_margin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="备注:待填充 //一级副标题" />
 
             <com.microsoft.fluentui.widget.Button
-                android:id="@+id/btn_snack_bar"
+                android:id="@+id/btn_announcement_snack_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ANNOUNCEMENT SnackBar 公告快餐栏" />
+
+            <com.microsoft.fluentui.widget.Button
+                android:id="@+id/btn_regular_snack_bar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/default_view_margin"
-                android:text="SnackBar 快餐栏" />
+                android:text="REGULAR SnackBar 常规快餐栏" />
 
+            <com.microsoft.fluentui.widget.Button
+                android:id="@+id/btn_action_snack_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_view_margin"
+                android:text="ACTION SnackBar 动作快餐栏" />
+
+            <com.microsoft.fluentui.widget.Button
+                android:id="@+id/btn_long_snack_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_view_margin"
+                android:text="LONG SnackBar 长快餐栏" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

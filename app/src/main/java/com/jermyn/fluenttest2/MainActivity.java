@@ -3,13 +3,10 @@ package com.jermyn.fluenttest2;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 
 import com.microsoft.fluentui.appbarlayout.AppBarLayout;
-import com.microsoft.fluentui.snackbar.Snackbar;
-import com.microsoft.fluentui.widget.Button;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,12 +28,8 @@ public class MainActivity extends AppCompatActivity {
         setTitle("Fluent UI 学习");
     }
 
-    @OnClick(R.id.btn_announcement_snake_bar)
-    void onAnnouncementSnakeBar(){
-        Snackbar.Companion.make(rootView, "ANNOUNCEMENT Snake Bar 公告蛇栏", 3000, Snackbar.Style.ANNOUNCEMENT).show();
-    }
-    @OnClick(R.id.btn_regular_snake_bar)
-    void onRegularSnakeBar(){
-        Snackbar.Companion.make(rootView, "REGULAR Snake Bar 常规蛇栏", 3000, Snackbar.Style.REGULAR).show();
+    @OnClick(R.id.btn_snack_bar)
+    void onRegularSnakeBarMatchParent(){
+        startActivity(new Intent(this, SnackBarActivity.class));
     }
 }
