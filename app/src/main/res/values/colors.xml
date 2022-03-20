@@ -7,4 +7,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!--Snackbar-->
+    <color name="snackbar_circular_progress_drawable">@color/fluentui_white</color>
 </resources>

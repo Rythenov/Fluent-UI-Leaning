@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Fluent UI 学习</string>
+    <string name="single_line">单行 Single line</string>
+    <string name="short_duration">短持续时间</string>
+    <string name="short_duration_with_action">短持续时间 &amp;&amp; ACTION</string>
+    <string name="action">ACTION</string>
+    <string name="response_action">响应动作</string>
+    <string name="long_duration_with_circular_progress_as_small_custom_view">长持续时间 &amp;&amp; 作为 Small CustomView 的圆形进度条</string>
+    <string name="show_snack_bar">SHOW SNACK BAR</string>
 </resources>
