@@ -3,7 +3,6 @@ package com.jermyn.fluentuilearning;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import com.microsoft.fluentui.appbarlayout.AppBarLayout;
@@ -30,7 +29,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick(R.id.btn_snack_bar)
-    void onRegularSnakeBarMatchParent(){
+    void onSnackBar(){
         SnackBarActivity.open(this);
+    }
+
+    @OnClick(R.id.btn_app_bar)
+    void onAppBar(){
+        AppBarActivity.open(this);
     }
 }

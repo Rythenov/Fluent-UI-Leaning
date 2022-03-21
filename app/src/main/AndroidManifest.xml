@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.jermyn.fluentuilearning.SnackBarActivity"/>
-        <activity android:name="com.jermyn.fluentuilearning.AppBarLearningActivity"/>
+        <activity android:name="com.jermyn.fluentuilearning.AppBarActivity"/>
         <activity
             android:theme="@style/AppTheme.Launcher"
             android:name="com.jermyn.fluentuilearning.MainActivity"
