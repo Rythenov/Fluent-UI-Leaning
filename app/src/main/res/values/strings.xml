@@ -21,4 +21,23 @@
     <string name="short_duration_with_long_action">短持续时间 &amp;&amp; 长文本Action</string>
     <string name="snackbar_headline_announcement_style">公告风格 Announcement style</string>
     <string name="snackbar_announcement">这是一个公告风格快餐栏。 它用于传达新信息。</string>
+    <string name="list_item_click">你点击了列表项 List Item</string>
+    <string name="app_bar_layout_hide_icon_button">隐藏图标Hide icon</string>
+    <string name="app_bar_layout_searchbar_accessory_view_button">作为附件视图显示</string>
+    <string name="app_bar_layout_toggle_scroll_behavior_sub_header">滚动行为: %s</string>
+    <string name="app_bar_layout_toggle_scroll_behavior_button">切换滚动行为</string>
+    <string name="app_bar_layout_toggle_navigation_icon_sub_header">切换导航图标</string>
+    <string name="app_bar_layout_toggle_searchbar_sub_header">切换搜索栏布局样式</string>
+    <string name="app_bar_layout_toggle_theme_button">切换主题</string>
+    <string name="item">项</string>
+    <string name="app_bar_layout_toggle_theme_sub_header">在主题之间切换（重新创建Activity）</string>
+    <string name="app_bar_layout_list_sub_header">额外的可滚动内容</string>
+    <string name="app_bar_layout_show_avatar_button">显示头像</string>
+    <string name="app_bar_layout_navigation_icon_clicked">点击导航按钮</string>
+    <string name="app_bar_layout_show_back_icon_button">显示返回按钮</string>
+    <string name="app_bar_layout_menu_flag">Flag</string>
+    <string name="app_bar_layout_menu_settings">Settings</string>
+    <string name="app_bar_layout_menu_search">Search</string>
+
+    <string name="app_bar_layout_searchbar_action_view_button">作为操作视图显示</string>
 </resources>
